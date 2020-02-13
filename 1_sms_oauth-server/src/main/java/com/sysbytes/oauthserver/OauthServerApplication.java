@@ -31,7 +31,7 @@ public class OauthServerApplication extends AuthorizationServerConfigurerAdapter
 	public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
 		clients
 				.inMemory()
-				.withClient("edureka")
+				.withClient("myclient")
 				.secret("{noop}123")
 				.authorizedGrantTypes("password", "client_credentials", "refresh_token")
 				.scopes("read", "trust")
